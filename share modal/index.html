@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="w-[100vw] h-[100vh] bg-[#1a6379c2]  relative ">
+        <div id="ball1" class="bg-orange-700 w-[200px] h-[200px] rounded-[50%] shadow-red-500/50 absolute top-[20px] left-[350px]"></div>
+        <div class="w-[400px] h-[500px]  border border-[#696868] absolute top-[150px] left-[500px]  rounded-[10px] bg-[#f3efef28] flex flex-col items-center justify-center gap-[30px]"   >
+            <img src="Screenshot 2023-11-07 082519.png" alt="meri photo" width="200px" class="rounded-[50%] "> 
+            <h2 class="text-[25px] font-bold text-[#FFF]">Divyanshu Rajwar</h2>
+            <p class="text-[19px] text-[#f3f2f2] ">Founder,Clean Energy</p>
+            <div class="flex gap-3">
+                <button onclick="openModal()" class="w-[150px] border rounded-[5px]  text-[#FFF] hover:text-[#000]  hover:bg-white hover:font-bold">
+                    <i  class="fa-regular fa-share-from-square hover:text-black"></i>
+                    Share My Profile</button>
+                <button class="w-[150px] border hover:font-bold rounded-[5px] text-[#FFF] hover:text-[#000]  hover:bg-white"><i></i>Follow Me</button>
+            </div>
+        </div>
+        
+        
+        <div id="ball2" class="z-[-1] bg-blue-700 w-[200px] h-[200px] rounded-[50%] shadow-lg shadow-blue-500/50 absolute left-[860px] bottom-[10px]"></div>
+    </div>
+    <div class="modal">
+        <div id="heading">
+            <h1 id="profile">Share My Profile</h1>
+            <i onclick="closeModal()" class="fa-solid fa-xmark hover:cursor-pointer" id="cross"></i>
+        </div>
+        <div id="line"></div>
+        <div id="content">
+            <h2 id="share">Share this via</h2>
+            <div id="logo">
+                <div class="social" id="fb">
+                    <i class="facebook text-[25px] fa-brands fa-facebook-f text-[rgb(41,122,253)]"></i>
+                </div>
+                <div class="social" id="twitter">
+                    <i class="twi fa-brands fa-twitter text-[rgb(51,97,172)] text-[25px]"></i>
+                </div>
+                <div class="social" id="insta">
+                    <i class="fa-brands instagram fa-instagram text-[rgb(199,11,125)] text-[25px]"></i>
+                </div>
+                <div class="social" id="whatsapp">
+                    <i class="whatsap fa-brands fa-whatsapp text-[25px] text-[rgb(7,209,69)]"></i>
+                </div>
+                <div class="social" id="tele">
+                    <i class="telegram text-[25px] fa-brands fa-telegram text-[rgb(37,152,205)]"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div onclick="closeModal()" class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
